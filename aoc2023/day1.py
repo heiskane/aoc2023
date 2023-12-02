@@ -11,10 +11,7 @@ DIGITS = {
 }
 
 
-def part1() -> int:
-    with open("inputs/day1/part1.txt", "r") as f:
-        data = f.readlines()
-
+def part1(data: list[str]) -> int:
     result = 0
     for line in data:
         first = next(i for i in line if i.isdigit())
@@ -24,10 +21,7 @@ def part1() -> int:
     return result
 
 
-def part2() -> int:
-    with open("inputs/day1/part1.txt", "r") as f:
-        data = f.readlines()
-
+def part2(data: list[str]) -> int:
     result = 0
     numbers = list(DIGITS.keys()) + list(DIGITS.values())
     for line in data:
