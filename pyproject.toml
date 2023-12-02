@@ -11,6 +11,9 @@ python = "^3.10"
 [tool.poetry.scripts]
 aoc2023 = 'aoc2023.main:main'
 
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.3"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
